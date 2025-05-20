@@ -1,0 +1,37 @@
+@use "@faridsh69/react-utils/scss/common";
+
+.story {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include common.scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px 50px;
+
+  border-left: 1px solid var(--grey-100);
+}
+
+.selects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90%;
+  padding: 30px;
+  height: 300px;
+
+  .select {
+    width: 46%;
+    height: 100px;
+  }
+}
+
+.Image {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
