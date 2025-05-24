@@ -1,0 +1,26 @@
+@use "@faridsh69/react-utils/scss/common";
+
+.home {
+  height: 700px;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px #ccc;
+
+  margin: 0px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  .marginTop100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}

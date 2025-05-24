@@ -6,22 +6,40 @@ import {
   getProductsApi,
   updateProductApi,
 } from "./crudConfig/productApis";
+import {
+  createProgramApi,
+  deleteProgramApi,
+  getProgramApi,
+  getProgramsApi,
+  updateProgramApi,
+} from "../../services/programsApis";
 
-const QUERY_KEYS = {
+export const TEST_QUERY_KEYS = {
   base: {
-    products: "base products",
+    products: "base_products",
+  },
+  gym: {
+    programs: "gym_programs",
   },
 };
 
-export const UTILS_QUERY_KEY_APIS: ApiKeyMapType = {
-  [QUERY_KEYS.base.products]: {
+// @ts-ignore
+export const TEST_QUERY_KEY_APIS: ApiKeyMapType = {
+  [TEST_QUERY_KEYS.base.products]: {
     listApi: getProductsApi,
     singleApi: getProductApi,
     createApi: createProductApi,
     updateApi: updateProductApi,
     deleteApi: deleteProductApi,
   },
+  [TEST_QUERY_KEYS.gym.programs]: {
+    listApi: getProgramsApi,
+    singleApi: getProgramApi,
+    createApi: createProgramApi,
+    updateApi: updateProgramApi,
+    deleteApi: deleteProgramApi,
+  },
 };
 
 export const useCrudProducts = () =>
-  useCrud(UTILS_QUERY_KEY_APIS, QUERY_KEYS.base.products);
+  useCrud(TEST_QUERY_KEY_APIS, TEST_QUERY_KEYS.base.products);
