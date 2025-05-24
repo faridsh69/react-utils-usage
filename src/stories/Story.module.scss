@@ -35,3 +35,252 @@
   flex-direction: row;
   gap: 20px;
 }
+
+/* To make colors accessible in all child apps */
+
+:root {
+  /* old colors */
+  --theme-color: #2186ab;
+  --theme-color-10: rgba(33, 134, 171, 0.1);
+  --theme-color-20: rgba(33, 134, 171, 0.2);
+  --theme-color-30: #2186ab4d;
+  --theme-color-dark: #115d78;
+  --success-light: #42b58d;
+  --success-light-10: #42b58d1a;
+  --success-dark: #278767;
+  --neutral-light: #bc8d3f;
+  --neutral-light-10: #bc8d3f1a;
+  --neutral-dark: #ac7513;
+  --danger-light: #cc4850;
+  --danger-light-10: #cc48501a;
+  --danger-dark: #a93c43;
+  --grey-300: #f6f6f7;
+  --grey-400: #ededf0;
+  --grey-800: #363d45;
+  /* @deprecated Use grey-300 instead */
+  --grey-light: #f6f6f7;
+  /* @deprecated Use grey-400 instead */
+  --grey-medium: #ededf0;
+  /* @deprecated Use grey-500 instead */
+  --grey-dark: #cccccc;
+  /* @deprecated Use grey-600 instead */
+  --grey-contrast: #999999;
+
+  /* DS 3.0 colors */
+  --primary-blue-light: #2186ab;
+  --primary-blue-dark: #195d78;
+  --secondary-turquoise-light: #38a09d;
+  --secondary-turquoise-dark: #2a8484;
+  --secondary-orange-light: #f08062;
+  --secondary-orange-dark: #d16c59;
+  --secondary-pink-light: #c94f98;
+  --secondary-pink-dark: #b14388;
+  --secondary-purple-light: #9b80ba;
+  --secondary-purple-dark: #8e6bac;
+  --secondary-blue-light: #8f98eb;
+  --secondary-blue-dark: #6f78c8;
+  --warning-green-light: #94ba5d;
+  --warning-green-dark: #8aa657;
+  --warning-orange-light: #dd8447;
+  --warning-orange-dark: #c66726;
+  --warning-red-light: #cc4850;
+  --warning-red-dark: #a93c43;
+  --grey-100: #f6f6f7;
+  --grey-200: #ededed;
+  --grey-500: #ccc;
+  --grey-600: #999;
+  --grey-900: #2b2b2b;
+  --grey-100-grad: rgba(0, 0, 0, 0.04);
+  --grey-200-grad: rgba(0, 0, 0, 0.08);
+  --grey-500-grad: rgba(0, 0, 0, 0.24);
+  --primary-blue-t10: rgba(33, 134, 171, 0.1);
+  --secondary-turquoise-t10: rgba(56, 160, 157, 0.1);
+  --secondary-orange-t10: rgba(240, 128, 98, 0.1);
+  --secondary-pink-t10: rgba(201, 79, 152, 0.1);
+  --secondary-purple-t10: rgba(155, 128, 186, 0.1);
+  --secondary-blue-t10: rgba(143, 152, 235, 0.1);
+  --warning-green-t10: rgba(148, 186, 93, 0.1);
+  --warning-orange-t10: rgba(221, 132, 71, 0.1);
+  --warning-red-t10: rgba(204, 72, 80, 0.1);
+  --white: #fff;
+  --black: #000;
+  --white-t10: rgba(255, 255, 255, 0.1);
+  --primary-blue-t20: rgba(33, 134, 171, 0.2);
+  --secondary-turquoise-t20: rgba(56, 160, 157, 0.2);
+  --secondary-orange-t20: rgba(240, 128, 98, 0.2);
+  --secondary-pink-t20: rgba(201, 79, 152, 0.2);
+  --secondary-purple-t20: rgba(155, 128, 186, 0.2);
+  --secondary-blue-t20: rgba(143, 152, 235, 0.2);
+  --warning-green-t20: rgba(148, 186, 93, 0.2);
+  --warning-orange-t20: rgba(221, 132, 71, 0.2);
+  --warning-red-t20: rgba(204, 72, 80, 0.2);
+  --white-t20: rgba(255, 255, 255, 0.2);
+  --primary-blue-t30: rgba(33, 134, 171, 0.3);
+  --secondary-turquoise-t30: rgba(56, 160, 157, 0.3);
+  --secondary-orange-t30: rgba(240, 128, 98, 0.3);
+  --secondary-pink-t30: rgba(201, 79, 152, 0.3);
+  --secondary-purple-t30: rgba(155, 128, 186, 0.3);
+  --secondary-blue-t30: rgba(143, 152, 235, 0.3);
+  --warning-green-t30: rgba(148, 186, 93, 0.3);
+  --warning-orange-t30: rgba(221, 132, 71, 0.3);
+  --warning-red-t30: rgba(204, 72, 80, 0.3);
+  --white-t30: rgba(255, 255, 255, 0.3);
+  --primary-blue-t40: rgba(33, 134, 171, 0.4);
+  --secondary-turquoise-t40: rgba(56, 160, 157, 0.4);
+  --secondary-orange-t40: rgba(240, 128, 98, 0.4);
+  --secondary-pink-t40: rgba(201, 79, 152, 0.4);
+  --secondary-purple-t40: rgba(155, 128, 186, 0.4);
+  --secondary-blue-t40: rgba(143, 152, 235, 0.4);
+  --warning-green-t40: rgba(148, 186, 93, 0.4);
+  --warning-orange-t40: rgba(221, 132, 71, 0.4);
+  --warning-red-t40: rgba(204, 72, 80, 0.4);
+  --white-t40: rgba(255, 255, 255, 0.4);
+  --primary-blue-t50: rgba(33, 134, 171, 0.5);
+  --secondary-turquoise-t50: rgba(56, 160, 157, 0.5);
+  --secondary-orange-t50: rgba(240, 128, 98, 0.5);
+  --secondary-pink-t50: rgba(201, 79, 152, 0.5);
+  --secondary-purple-t50: rgba(155, 128, 186, 0.5);
+  --secondary-blue-t50: rgba(143, 152, 235, 0.5);
+  --warning-green-t50: rgba(148, 186, 93, 0.5);
+  --warning-orange-t50: rgba(221, 132, 71, 0.5);
+  --warning-red-t50: rgba(204, 72, 80, 0.5);
+  --white-t50: rgba(255, 255, 255, 0.5);
+  --primary-blue-t60: rgba(33, 134, 171, 0.6);
+  --secondary-turquoise-t60: rgba(56, 160, 157, 0.6);
+  --secondary-orange-t60: rgba(240, 128, 98, 0.6);
+  --secondary-pink-t60: rgba(201, 79, 152, 0.6);
+  --secondary-purple-t60: rgba(155, 128, 186, 0.6);
+  --secondary-blue-t60: rgba(143, 152, 235, 0.6);
+  --warning-green-t60: rgba(148, 186, 93, 0.6);
+  --warning-orange-t60: rgba(221, 132, 71, 0.6);
+  --warning-red-t60: rgba(204, 72, 80, 0.6);
+  --white-t60: rgba(255, 255, 255, 0.6);
+  --primary-blue-t70: rgba(33, 134, 171, 0.7);
+  --secondary-turquoise-t70: rgba(56, 160, 157, 0.7);
+  --secondary-orange-t70: rgba(240, 128, 98, 0.7);
+  --secondary-pink-t70: rgba(201, 79, 152, 0.7);
+  --secondary-purple-t70: rgba(155, 128, 186, 0.7);
+  --secondary-blue-t70: rgba(143, 152, 235, 0.7);
+  --warning-green-t70: rgba(148, 186, 93, 0.7);
+  --warning-orange-t70: rgba(221, 132, 71, 0.7);
+  --warning-red-t70: rgba(204, 72, 80, 0.7);
+  --white-t70: rgba(255, 255, 255, 0.7);
+  --primary-blue-t80: rgba(33, 134, 171, 0.8);
+  --secondary-turquoise-t80: rgba(56, 160, 157, 0.8);
+  --secondary-orange-t80: rgba(240, 128, 98, 0.8);
+  --secondary-pink-t80: rgba(201, 79, 152, 0.8);
+  --secondary-purple-t80: rgba(155, 128, 186, 0.8);
+  --secondary-blue-t80: rgba(143, 152, 235, 0.8);
+  --warning-green-t80: rgba(148, 186, 93, 0.8);
+  --warning-orange-t80: rgba(221, 132, 71, 0.8);
+  --warning-red-t80: rgba(204, 72, 80, 0.8);
+  --white-t80: rgba(255, 255, 255, 0.8);
+  --primary-blue-t90: rgba(33, 134, 171, 0.9);
+  --secondary-turquoise-t90: rgba(56, 160, 157, 0.9);
+  --secondary-orange-t90: rgba(240, 128, 98, 0.9);
+  --secondary-pink-t90: rgba(201, 79, 152, 0.9);
+  --secondary-purple-t90: rgba(155, 128, 186, 0.9);
+  --secondary-blue-t90: rgba(143, 152, 235, 0.9);
+  --warning-green-t90: rgba(148, 186, 93, 0.9);
+  --warning-orange-t90: rgba(221, 132, 71, 0.9);
+  --warning-red-t90: rgba(204, 72, 80, 0.9);
+  --white-t90: rgba(255, 255, 255, 0.9);
+
+  /* typography */
+  --font-text-12: normal 400 12px/18px Raleway;
+  --font-text-14: normal 400 14px/21px Raleway;
+  --font-text-16: normal 400 16px/24px Raleway;
+
+  --font-header-12: normal 700 12px/18px Raleway;
+  --font-header-14: normal 700 14px/21px Raleway;
+  --font-header-16: normal 700 16px/24px Raleway;
+  --font-header-18: normal 700 18px/20px Raleway;
+  --font-header-20: normal 700 20px/22px Raleway;
+  --font-header-22: normal 700 22px/26px Raleway;
+  --font-header-26: normal 700 26px/28px Raleway;
+  --font-header-30: normal 700 30px/34px Raleway;
+
+  --font-inline-12: normal 400 12px/16px Raleway;
+  --font-inline-14: normal 400 14px/18px Raleway;
+  --font-inline-16: normal 400 16px/20px Raleway;
+
+  --font-inline-header-12: normal 700 12px/13px Raleway;
+  --font-inline-header-14: normal 700 14px/15px Raleway;
+
+  /* components */
+  --general-outline-width: 3px;
+  --general-outline-style: solid;
+
+  --general-size24-counter-h: 18px;
+  --general-size24-counter-spacing-v: 3px;
+  --general-size24-font: var(--font-inline-12);
+  --general-size24-margin-h: 6px;
+  --general-size24-margin-v: 6px;
+  --general-size24-spacing-h: 6px;
+  --general-size24-borderradius: 4px;
+  --general-size24-content: 12px;
+  --general-size24-spacing-v: 8px;
+  --general-size24-spacing-elements: 12px;
+
+  --general-size34-counter-h: 24px;
+  --general-size34-counter-spacing-v: 6px;
+  --general-size34-font: var(--font-inline-14);
+  --general-size34-margin-h: 10px;
+  --general-size34-margin-v: 10px;
+  --general-size34-spacing-h: 10px;
+  --general-size34-borderradius: 6px;
+  --general-size34-content: 14px;
+  --general-size34-spacing-v: 12px;
+  --general-size34-spacing-elements: 20px;
+
+  --general-size48-counter-h: 34px;
+  --general-size48-counter-spacing-v: 12px;
+  --general-size48-font: var(--font-inline-16);
+  --general-size48-margin-h: 16px;
+  --general-size48-margin-v: 16px;
+  --general-size48-spacing-h: 16px;
+  --general-size48-borderradius: 8px;
+  --general-size48-content: 16px;
+  --general-size48-spacing-v: 18px;
+  --general-size48-spacing-elements: 32px;
+
+  --general-size64-font: var(--font-header-22);
+  --general-size64-spacing-h: 16px;
+  --general-size64-borderradius: 8px;
+
+  --labels-label-24-spacing-h: 4px;
+  --labels-label-24-font: var(--font-inline-header-12);
+  --labels-label-34-spacing-v: 4px;
+  --labels-label-34-font: var(--font-inline-header-12);
+  --labels-label-48-spacing-v: 4px;
+  --labels-label-48-font: var(--font-inline-header-12);
+
+  --tables-table-margin-h: 12px;
+  --tables-table-spacing-h: 6px;
+  --tables-table-margin-v: 12px;
+  --tables-table-border-radius: 20px;
+  --tables-table-cell-height: 50px;
+
+  --navigation-sidenavigation-spacing-h: 10px;
+  --navigation-sidenavigation-margin-h: 10px;
+  --navigation-sidenavigation-margin-v: 8px;
+  --navigation-sidenavigation-borderradius: 8px;
+
+  --forms-forms-spacing-h: 8px;
+  --forms-forms-spacing-v: 20px;
+
+  --modals-modal-margin: 40px;
+  --modals-modal-headermargin-v: 20px;
+  --modals-modal-border-radius: 20px;
+
+  --dialogs-dialog-headermargin-v: 12px;
+  --dialogs-dialog-margin: 20px;
+  --dialogs-dialog-border-radius: 20px;
+
+  --kanban-kanban-margin-h: 12px;
+  --kanban-kanban-margin-v: 12px;
+  --kanban-kanban-spacing-v: 12px;
+  --kanban-kanban-borderradius: 8px;
+  --kanban-kanban-spacing-h: 10px;
+  --kanban-kanban-spacing-elements: 6px;
+}
